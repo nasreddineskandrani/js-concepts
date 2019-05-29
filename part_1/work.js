@@ -1,5 +1,6 @@
-console.log('part_1 - JavaScript Hoisting - start');
+console.log('part_1 - JavaScript Hoisting / scope - start');
 //// https://www.w3schools.com/js/js_hoisting.asp
+//// https://www.w3schools.com/js/js_scope.asp
 
 var t = 1;
 {
