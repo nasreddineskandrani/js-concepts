@@ -48,7 +48,7 @@ function gg() {
 };
 console.log('g :', g);
 
-/* vv is not a function
+/* hh is not a function
 var h = 1;
 hh();
 var hh = function() {
@@ -64,7 +64,7 @@ var ii = function() {
 const i = ii();
 console.log('i :', i());
 
-/* Error: t is not a function
+/* Error: j is not a function
 var jj = function() {
   var jjj = 33;
   return jjj;
