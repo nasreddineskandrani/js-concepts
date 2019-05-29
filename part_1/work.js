@@ -1,4 +1,5 @@
-console.log('part_1 - start');
+console.log('part_1 - JavaScript Hoisting - start');
+//// https://www.w3schools.com/js/js_hoisting.asp
 
 var t = 1;
 {
@@ -94,6 +95,5 @@ var yy = function() {
 };
 const t = yy();
 console.log('l :', t());
-
 
 console.log('part_1 - end');
