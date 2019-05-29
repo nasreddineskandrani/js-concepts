@@ -26,10 +26,10 @@ var t = 1;
 console.log('d :', t);
 
 var t = 1;
+test();
 function test() {
  t = 2;
 };
-test();
 console.log('e :', t);
 
 var t = 1;
