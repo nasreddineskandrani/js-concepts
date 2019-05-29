@@ -71,6 +71,10 @@ const t = yy();
 console.log('j :', t());
 */
 
+/*
+https://www.w3schools.com/js/js_hoisting.asp
+This is because only the declaration of var not the initialization is hoisted to the top.
+*/
 var yy = function() {
   return func;
   function func() { return 73; }
@@ -79,6 +83,10 @@ var yy = function() {
 const t = yy();
 console.log('k :', t());
 
+/*
+https://www.w3schools.com/js/js_hoisting.asp
+This is because only the declaration of var not the initialization is hoisted to the top.
+*/
 var yy = function() {
   return func;
   var func = 33;
