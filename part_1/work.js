@@ -2,99 +2,100 @@ console.log('part_1 - JavaScript Hoisting / scope - start');
 //// https://www.w3schools.com/js/js_hoisting.asp
 //// https://www.w3schools.com/js/js_scope.asp
 
-var t = 1;
+var a = 1;
 {
-  t = 2;
+  a = 2;
 }
-console.log('a :', t);
+console.log('a :', a);
 
-var t = 1;
+var b = 1;
 {
-  let t = 2;
+  let b = 2;
 }
-console.log('b :', t);
+console.log('b :', b);
 
-var t = 1;
+var c = 1;
 {
-  var t = 2;
+  var c = 2;
 }
-console.log('c :', t);
+console.log('c :', c);
 
-var t = 1;
+var d = 1;
 {
-  const t = 2;
+  const d = 2;
 }
-console.log('d :', t);
+console.log('d :', d);
 
-var t = 1;
+/* Error: e is not defined
 test();
 function test() {
- t = 2;
+ e = 2;
 };
-console.log('e :', t);
+console.log('e :', e);
+*/
 
-var t = 1;
+var f = 1;
 function test() {
- var t = 2;
+ var f = 2;
 };
 test();
-console.log('f :', t);
+console.log('f :', f);
 
-var t = 1;
+var g = 1;
 gg();
 function gg() {
- var t = 2;
+ var g = 2;
 };
-console.log('g :', t);
+console.log('g :', g);
 
 /* vv is not a function
-var t = 1;
-vv();
-var vv = function() {
- var t = 2;
+var h = 1;
+hh();
+var hh = function() {
+ var h = 2;
 };
-console.log('h :', t);
+console.log('h :', h);
 */
 
-var yy = function() {
- return func;
- function func() { return 71; }
+var ii = function() {
+ return iii;
+ function iii() { return 71; }
 };
-const t = yy()
-console.log('i :', t());
+const i = ii();
+console.log('i :', i());
 
 /* Error: t is not a function
-var yy = function() {
-  var func = 33;
-  return func;
-  function func() { return 72; }
+var jj = function() {
+  var jjj = 33;
+  return jjj;
+  function jjj() { return 72; }
 };
-const t = yy();
-console.log('j :', t());
+const j = jj();
+console.log('j :', j());
 */
 
 /*
 https://www.w3schools.com/js/js_hoisting.asp
 This is because only the declaration of var not the initialization is hoisted to the top.
 */
-var yy = function() {
-  return func;
-  function func() { return 73; }
-  var func = 33;
+var kk = function() {
+  return kkk;
+  function kkk() { return 73; }
+  var kkk = 33;
 };
-const t = yy();
-console.log('k :', t());
+const k = kk();
+console.log('k :', k());
 
 /*
 https://www.w3schools.com/js/js_hoisting.asp
 This is because only the declaration of var not the initialization is hoisted to the top.
 */
-var yy = function() {
-  return func;
-  var func = 33;
-  function func() { return 74; }
+var ll = function() {
+  return lll;
+  var lll = 33;
+  function lll() { return 74; }
 };
-const t = yy();
-console.log('l :', t());
+const l = ll();
+console.log('l :', l());
 
 console.log('part_1 - end');
