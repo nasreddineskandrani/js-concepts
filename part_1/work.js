@@ -72,7 +72,7 @@ var jj = function() {
 };
 const j = jj();
 console.log('j :', j());
-*/
+
 
 /*
 https://www.w3schools.com/js/js_hoisting.asp
@@ -99,3 +99,10 @@ const l = ll();
 console.log('l :', l());
 
 console.log('part_1 - end');
+
+/* Error: total is not defined
+const x = total;
+console.log(x);
+x = 2;
+console.log(x);
+*/
